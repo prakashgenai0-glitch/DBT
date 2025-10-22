@@ -1,5 +1,7 @@
-
+{{
+    config(materialized='view')
+}}
 select 
 id,
 name
-from {{ ref('first_name1') }}
+from {{ ref('file_name1') }}
