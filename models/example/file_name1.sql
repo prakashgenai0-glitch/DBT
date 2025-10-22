@@ -2,4 +2,4 @@
     config(materialized='table')
 }}
 
-select * from schema1.t2
+select * from {{ ref('first_name1') }}
