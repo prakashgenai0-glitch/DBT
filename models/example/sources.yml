@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: schema1
+    database: D1
+    schema: schema1
+    description: "description test"
+
+    tables:
+      - name: t2
