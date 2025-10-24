@@ -1,4 +1,4 @@
 select 
 id,
 name
-from schema1.t2
+from {{source('schema1','t2')}}
