@@ -1,6 +1,7 @@
+
+
 select 
 id,
-name
-from {{ref('mr')}}
-
-
+name,
+current_timestamp as load_time,
+from {{source('schema1','t2')}}
